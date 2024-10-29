@@ -7,7 +7,8 @@ def calculator():
 
     while True:
         choice = input("Enter choice (1/2/3/4): ")
-
+  	if choice == '1':
+                print(f"{num1} + {num2} = {add(num1, num2)}")
 
         next_calc = input("Do you want to perform another calculation? (yes/no): ")
         if next_calc.lower() != 'yes':
