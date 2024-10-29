@@ -1,5 +1,8 @@
 def add(x, y):
 
+def subtract(x, y):
+    return x - y
+
 def multiply(x, y):
     return x * y
 
@@ -21,6 +24,8 @@ def calculator():
                 continue
             if choice == '1':
                 print(f"{num1} + {num2} = {add(num1, num2)}")
+            elif choice == '2':
+                print(f"{num1} - {num2} = {subtract(num1, num2)}")
 	    elif choice == '3':
                 print(f"{num1} * {num2} = {multiply(num1, num2)}")
        	    next_calc = input("Do you want to perform another calculation? (yes/no): ")
