@@ -1,4 +1,5 @@
 def add(x, y):
+    return x + y
 
 def subtract(x, y):
     return x - y
@@ -35,6 +36,7 @@ def calculator():
                 print(f"{num1} * {num2} = {multiply(num1, num2)}")
             elif choice == '4':
                 print(f"{num1} / {num2} = {divide(num1, num2)}")
+
        	    next_calc = input("Do you want to perform another calculation? (yes/no): ")
             if next_calc.lower() != 'yes':
                 break
