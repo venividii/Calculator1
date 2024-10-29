@@ -6,6 +6,11 @@ def subtract(x, y):
 def multiply(x, y):
     return x * y
 
+def divide(x, y):
+    if y == 0:
+        return "Error: Division by zero!"
+    return x / y
+
 def calculator():
     print("Select operation:")
     print("1. Add")
@@ -28,6 +33,8 @@ def calculator():
                 print(f"{num1} - {num2} = {subtract(num1, num2)}")
 	    elif choice == '3':
                 print(f"{num1} * {num2} = {multiply(num1, num2)}")
+            elif choice == '4':
+                print(f"{num1} / {num2} = {divide(num1, num2)}")
        	    next_calc = input("Do you want to perform another calculation? (yes/no): ")
             if next_calc.lower() != 'yes':
                 break
